@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicine Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <nav class="bg-blue-600 text-white p-4 flex justify-between">
+    <a href="/sih/home" class="font-bold">🏠 Telemedicine App</a>
+    <button id="logoutBtn" class="bg-red-500 px-3 py-1 rounded hover:bg-red-600">Logout</button>
+  </nav>
+
+  <main class="p-6">
+    <h1 class="text-2xl font-bold mb-4">💊 Medicine Availability</h1>
+
+    <!-- Search and filter -->
+    <div class="flex flex-col md:flex-row gap-4 mb-6">
+      <input type="text" id="searchInput" placeholder="Search medicine..." 
+             class="border px-3 py-2 rounded flex-1"/>
+      <select id="typeFilter" class="border px-3 py-2 rounded">
+        <option value="">All Types</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Capsule">Capsule</option>
+        <option value="Syrup">Syrup</option>
+      </select>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="grid gap-4"></div>
+  </main>
+
+  <script src="js/medicine.js"></script>
+</body>
+</html>
