@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Paracetamol",
+    "type": "Tablet",
+    "shops": [
+      { "shop": "City Pharmacy", "price": 20, "quantity": 50, "available": true },
+      { "shop": "Health Plus", "price": 18, "quantity": 0, "available": false }
+    ]
+  },
+  {
+    "name": "Amoxicillin",
+    "type": "Capsule",
+    "shops": [
+      { "shop": "MediCare Store", "price": 120, "quantity": 15, "available": true },
+      { "shop": "City Pharmacy", "price": 115, "quantity": 5, "available": true }
+    ]
+  },
+  {
+    "name": "Cough Syrup",
+    "type": "Syrup",
+    "shops": [
+      { "shop": "Health Plus", "price": 60, "quantity": 10, "available": true }
+    ]
+  }
+]
